@@ -58,16 +58,11 @@ glLoadIdentity();
 glColor3f(1.0, 0.0, 0.0);
 glRotatef(theta[0], 0.0, 1.0, 0.0);
 base();
-glRotatef(theta[1], 0.0, 0.0, 1.0);
 glTranslatef(0.0, BASE_HEIGHT, 0.0);
-
-
-
-lower_arm();glRotatef(theta[2], 0.0, 0.0, 1.0);
+glRotatef(theta[1], 0.0, 0.0, 1.0);
+lower_arm();
 glTranslatef(0.0, LOWER_ARM_HEIGHT, 0.0);
-
-
-
+glRotatef(theta[2], 0.0, 0.0, 1.0);
 upper_arm();
 glFlush();
 glutSwapBuffers();
